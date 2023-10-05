@@ -103,7 +103,7 @@ public class PlayerManager : MonoBehaviour
 
     private void setHealth(){
         texto.text = "Vida: " + health;
-        if(health==0){
+        if(health<=0){
             gameObject.SetActive(false);
             Destroy(gameObject);
         }
